@@ -35,7 +35,7 @@
             <span>Fonds</span>
         </a>
         <a href="{{ url_for('voir_instruments') }}" class="btn btn-orange">
-            <i class="fas fa-chart-bar"></i>
+            <i class="fa-solid fa-list"></i>
             <span>Instruments</span>
         </a>
     </div>
@@ -46,13 +46,12 @@
             <h1>Liste des Instruments</h1>
             <a href="{{ url_for('ajouter_instrument') }}" class="btn btn-primary add-button">Ajouter</a>
         </div>
-        <input type="text" id="search-instruments" class="form-control mb-3" placeholder="Rechercher un instrument...">
         <div id="instruments-container" class="row">
             {% for instrument in instruments %}
             <div class="col-md-4">
                 <div class="card card-bento" style="border: none;">
                     <div class="card-body">
-                        <h5 class="card-title">{{ instrument.nom_instrument }}</h5>
+                        <h5 class="card-title"><i class="fa-solid fa-border-all"></i>{{ instrument.nom_instrument }}</h5>
                         <p class="card-text"><strong>Type:</strong> {{ instrument.type_instrument }}</p>
                         <p class="card-text"><strong>Date d'Introduction:</strong> {{ instrument.date_introduction }}</p>
                     </div>
