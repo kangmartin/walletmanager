@@ -1,0 +1,17 @@
+<div class="row">
+    {% for fond in fonds %}
+    <div class="col-md-4">
+        <div class="card card-bento" style="border: none;">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <i class="fas fa-coins"></i>
+                    {{ fond.nom_fond }}
+                </h5>
+                <p class="card-text">{{ fond.description }}</p>
+                <p class="card-text"><strong>Date de Création:</strong> {{ fond.date_creation }}</p>
+                <a href="{{ url_for('voir_positions', id_fond=fond.id) }}" class="btn btn-primary">Voir les Positions</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
