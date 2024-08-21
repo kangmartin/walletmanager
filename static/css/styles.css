@@ -1,0 +1,131 @@
+body {
+    background-color: #120e24;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    display: flex;
+    min-height: 100vh;
+    background-color: #120e24;
+    color: white;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #161030;
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+    min-height: calc(100vh - 40px);
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    margin-bottom: 26px;
+    margin-top: 26px;
+}
+
+.sidebar a i {
+    margin-right: 10px;
+    min-width: 20px;
+}
+
+.sidebar a span {
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.sidebar a:hover {
+    background-color: #2c2c3c;
+}
+
+.content {
+    flex: 1;
+    padding: 30px;
+}
+
+.card-bento {
+    border-radius: 12px;
+    background-color: #161030;
+    color: #ffffff;
+    margin-bottom: 20px;
+    border: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+
+.card-bento .card-body {
+    padding: 20px;
+    background-color: #161030;
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card-bento h5 {
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-bento .btn {
+    border-radius: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+.search-container {
+    position: relative;
+}
+.search-container i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #cccccc;
+}
+#search-fonds {
+    padding-left: 30px;
+    background-color: #161030;
+    color: #ffffff;
+    border: 1px solid #343a40;
+     width: 236px;
+}
+#search-fonds::placeholder {
+    color: #cccccc;
+}
+.card-bento .card-title {
+    display: flex;
+    align-items: center;
+}
+.card-bento .card-title i {
+    margin-right: 8px;
+}
+.empty-message {
+    text-align: center;
+    font-style: italic;
+    color: #ff6651;
+}
+canvas {
+    max-width: 100%;
+    max-height: 200px;
+}
