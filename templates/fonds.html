@@ -29,7 +29,8 @@
 <div class="container-fluid">
     <!-- Sidebar -->
     <div class="sidebar">
-        <h2>Portefeuilles</h2>
+        <h2>Wallet Manager</h2>
+       <h6 class="fst-italic">Application web de suivi des portefeuilles</h6>
         <a href="{{ url_for('voir_fonds') }}" class="btn btn-orange">
             <i class="fas fa-coins"></i>
             <span>Fonds</span>
@@ -64,7 +65,7 @@
                         <canvas id="pieChart-{{ data.fond.id }}" width="200" height="200"></canvas>
                         {% endif %}
                         <br><br>
-                        <a href="{{ url_for('voir_positions', id_fond=data.fond.id) }}" class="btn btn-primary">Voir les Positions</a>
+                        <a href="{{ url_for('voir_positions', id_fond=data.fond.id) }}" class="btn btn-primary">Voir les positions</a>
                     </div>
                 </div>
             </div>
