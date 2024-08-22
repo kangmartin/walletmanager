@@ -142,18 +142,5 @@ def api_fonds():
     conn.close()
     return render_template('fonds_partial.html', fonds=fonds)
 
-@app.route('/api/instruments')
-def api_instruments():
-    query = request.args.get('q', '')
-    conn = get_db_connection()
-    cursor = conn.cursor(dictionary=True)
-    cursor.execute('''
-        SELECT * FROM referentiel_instruments
-        WHERE nom_instrument LIKE %s
-    ''', ('%' + query + '%',))
-    instruments = cursor.fetchall()
-    conn.close()
-    return render_template('instruments_partial.html', instruments=instruments)
-
 if __name__ == '__main__':
     app.run(debug=True)
