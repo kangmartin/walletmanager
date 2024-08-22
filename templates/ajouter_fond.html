@@ -21,6 +21,8 @@
             margin-right: 8px;
         }
 
+
+
     </style>
 
 <body>
@@ -38,10 +40,10 @@
         </a>
     </div>
     <div class="content">
-        <h1>Ajouter un Nouveau Fond</h1>
+        <h1 class="mb-3">Ajouter un nouveau fond</h1>
         <form method="POST">
             <div class="mb-3">
-                <label for="nom_fond" class="form-label">Nom du Fond</label>
+                <label for="nom_fond" class="form-label">Nom du fond</label>
                 <input type="text" class="form-control" id="nom_fond" name="nom_fond" required>
             </div>
             <div class="mb-3">
@@ -49,7 +51,7 @@
                 <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
             </div>
             <div class="mb-3">
-                <label for="date_creation" class="form-label">Date de Création</label>
+                <label for="date_creation" class="form-label">Date de création</label>
                 <input type="date" class="form-control" id="date_creation" name="date_creation" required>
             </div>
             <button type="submit" class="btn btn-primary">Ajouter</button>
