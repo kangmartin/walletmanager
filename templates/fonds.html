@@ -24,6 +24,11 @@
         .btn-orange i {
             margin-right: 8px;
         }
+       .button-position {
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+           border: none;
+        }
 
     </style>
 </head>
@@ -49,6 +54,8 @@
             <h1>Liste des fonds</h1>
             <a href="{{ url_for('ajouter_fond') }}" class="btn btn-primary add-button">Ajouter</a>
         </div>
+
+        <form method="POST">
         <div class="search-container">
             <i class="fas fa-search"></i>
             <input type="text" id="search-fonds" class="form-control mb-3 filter" placeholder="Rechercher un fond...">
@@ -67,7 +74,7 @@
                         <canvas id="pieChart-{{ data.fond.id }}" width="200" height="200"></canvas>
                         {% endif %}
                         <br><br>
-                        <a href="{{ url_for('voir_positions', id_fond=data.fond.id) }}" class="btn btn-primary">Voir les positions</a>
+                        <a href="{{ url_for('voir_positions', id_fond=data.fond.id) }}" class="btn btn-primary button-position">Voir les positions</a>
                     </div>
                 </div>
             </div>
