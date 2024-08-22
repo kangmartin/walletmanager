@@ -63,22 +63,5 @@
         </div>
     </div>
 </div>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-$(document).ready(function() {
-    $('#search-instruments').on('input', function() {
-        var query = $(this).val();
-        $.ajax({
-            url: '/api/instruments',
-            method: 'GET',
-            data: { q: query },
-            success: function(data) {
-                $('#instruments-container').html(data);
-            }
-        });
-    });
-});
-</script>
 </body>
 </html>
