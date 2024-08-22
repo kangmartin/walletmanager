@@ -86,9 +86,7 @@ body {
     white-space: nowrap;
 }
 
-.card-bento .btn {
-    border-radius: 20px;
-}
+
 
 .sidebar h2 {
     margin-bottom: 20px;
@@ -129,3 +127,12 @@ canvas {
     max-width: 100%;
     max-height: 200px;
 }
+
+#nom_fond, #description, #date_creation, #nom_instrument, #type_instrument, #date_introduction, #quantite, #prix_achat, #date_achat, #id_instrument{
+    background-color: #161030;
+    color: #ffffff;
+    border: 1px solid #343a40;
+    width: 436px;
+}
+
+
